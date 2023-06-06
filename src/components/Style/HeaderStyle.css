@@ -1,0 +1,25 @@
+@media (max-width: 620px) {
+    #Product{
+        grid-template-columns: 1fr;
+        column-gap: 100px;
+    }
+    #dataFollower{
+        grid-template-columns: 1fr 1fr;
+    }
+    #productFollow{
+        height: 120vh;
+    }
+    #bgText{
+        transform: translate(350px, -140px);
+        font-size: 10px;
+    }
+    #imgZaraWhite{
+        transform: translate(-272px, 20px);
+    }
+    #seeButton{
+        transform: translate(-270px, 180px);
+        width: 160px;
+        height: 50px;
+    }
+  }
+  

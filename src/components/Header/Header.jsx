@@ -25,7 +25,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import iconArrowLeft from "../../asset/iconArrowLeft.png";
 import iconArrowRight from "../../asset/iconArrowRight.png"
-
+import "../Style/HeaderStyle.css"
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -114,9 +114,9 @@ const Header = () => {
   };
   return (
     <>
-      <Box className={classes.HeaderWrapper}>
+      <Box className={classes.HeaderWrapper} id="HeaderWrapper">
         <Navbar />
-        <Box className={classes.Headercontaier}>
+        <Box className={classes.Headercontaier} id="Headercontaier">
           <Box className={classes.HeaderLeft}>
             <Typography
               variant="h3"
@@ -202,7 +202,7 @@ const Header = () => {
               <img src={iconFil} alt="" className={classes.iconFilter} />
             </Box>
           </Box>
-          <Box className={classes.Product}>
+          <Box className={classes.Product} id="Product">
             {dataProduct.map((icon) => {
               return (
                 <>
@@ -227,13 +227,13 @@ const Header = () => {
           <Box className={classes.divBgImg}>
             <img className={classes.bgImg} src={bgImg} alt="" />
             <img src={zaraGrey} className={classes.imgZaraGrey} alt="" />
-            <img src={zaraWhite} className={classes.imgZaraWhite} alt="" />
-            <Typography className={classes.bgText}>
+            <img src={zaraWhite} id="imgZaraWhite" className={classes.imgZaraWhite} alt="" />
+            <Typography className={classes.bgText} id="bgText">
             Lustrous yet understated. The new evening wear collection
             exclusively offered at the reopened Giorgio Armani boutique in Los
             Angeles.
           </Typography>
-          <Button className={classes.seeButton}>See Collection</Button>
+          <Button className={classes.seeButton} id="seeButton">See Collection</Button>
           </Box>
         </Box>
         <Box>
@@ -274,13 +274,13 @@ const Header = () => {
         <br />
         <br />
         <br />
-        <Box className={classes.productFollow}>
+        <Box className={classes.productFollow} id="productFollow">
           <Box>
             <Typography className={classes.FollowerText}>
               Follow products and discounts on Instagram
             </Typography>
           </Box>
-          <Box className={classes.dataFollow}>
+          <Box className={classes.dataFollow} id="dataFollower">
             {dataFollower.map((icon) => {
               return (
                 <>
