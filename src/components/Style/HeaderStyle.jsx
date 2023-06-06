@@ -1,4 +1,4 @@
-import { makeStyles} from "@material-ui/core";
+import { colors, makeStyles} from "@material-ui/core";
 import { Theme } from "../Theme";
 
 export const useStyles = makeStyles(() => ({
@@ -222,9 +222,144 @@ export const useStyles = makeStyles(() => ({
         }
     },
     Seller: {
+        margin: "0 auto",
+        width: "80%"
+    },
+    bgImg:{
+        width: "100%",
+        position: "relative",
+    },
+    imgZaraGrey: {
+        position: "absolute",
+        transform: "translate(-676px, 30px)",
+    },
+    imgZaraWhite:{
+        position: "absolute",
+        transform: "translate(-838px, 120px)",
+    },
+    bgText:{
+        position: "absolute",
+        transform: "translate(1065px, -490px)",
+        color: "#FF6F61",
+        fontSize: "26px",
+        fontWeight: "400",
+        width: "30%"
+    },
+    seeButton:{
+        width: "237px",
+        height: "72px",
+        backgroundColor: "#FFFFFF",
+        colors: "#1E2832",
+        position: "absolute",
+        transform: "translate(-840px, 526px)",
+    },
+    productFollow:{
+        width: "100%",
+        height: "653px",
+        background: "#F0F0F0"
+    },
+    FollowerText:{
+        fontFamily: "Roboto",
+        fontWeight: "500",
+        fontSize: "50px",
+        textAlign: "center",
+        padding: "60px"
+    },
+    dataFollow: {
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr",
+        padding: "20px 100px",
+        textAlign: "center"
+    },
+    lisaText: {
+        fontFamily: "Roboto",
+        fontSize: "28px",
+        fontWeight: "500",
+        textAlign: "center",
+        color: "#FF6F61",
+        padding: "60px"
+    },
+    Footer: {
+        padding: "50px",
+        height: "329px",
+    },
+    footerLeft:{
+        float: "left",
+        width: "30%",
+    },
+    footerLeftText:{
+        padding: "100px 70px",
+    },
+    footerLeftTextLisa:{
+        fontFamily: "AmstelvarAlpha",
+        fontWeight: "400",
+        fontSize: "28px",
+        color: "#000000"
+    },
+    footerLeftTextPara:{
+        fontFamily: "Opwn Sans",
+        fontWeight: "400",
+        fontSize: "16px",
+        color: "RGB(75, 75, 75)"
+    },
+    iconImg:{
         display: "grid",
         gridTemplateColumns: "1fr 1fr 1fr 1fr",
-        rowGap: "20px",
-        padding: "0px 90px",
+        padding: "20px 10px",
     },
+    footerRight: {
+        float: "right",
+        width: "70%",
+    },
+    RightTable:{
+        padding: "100px 20px",
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr"
+    },
+    textRight:{
+        fontFamily: "AmstelvarAlpha",
+        fontWeight: "400",
+        fontSize: "16px",
+        color: "#000000"
+    },
+    footerEnd: {
+        background: "#1E2832",
+        width: "100%",
+        height: "52px",
+        textAlign: "center",
+        justifyContent: "space-around",
+        alignItems: "center",
+        display: "flex"
+    },
+    footerText:{
+        fontFamily: "Open Sans",
+        fontWeight: "400",
+        fontSize: "16px",
+        color: "#FFFFFF"
+    },
+    footerTextRight:{
+        fontFamily: "Open Sans",
+        fontWeight: "400",
+        fontSize: "16px",
+        color: "#FFFFFF"
+    },
+    tableItem:{
+        paddingLeft: "30px",
+    },
+    textRightTable:{
+        fontFamily: "Open Sans",
+        fontWeight: "400",
+        fontSize: "14px",   
+        color: "#1E2832"
+    },
+    scroll:{
+        display: "flex",
+    },
+    arrowOn:{
+        width: "16px",
+        height: "16px",
+        fontSize: "14px",
+        fontWeight: "900",
+        marginTop: "4px"
+    }
 }))
