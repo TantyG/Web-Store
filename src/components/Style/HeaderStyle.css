@@ -21,5 +21,43 @@
         width: 160px;
         height: 50px;
     }
+    #HeaderLeft{
+        width: 100%;
+        height: 65vh;
+    }
+    #HeaderRight{
+        width: 100%;
+        height: 100vh;
+    }
+    #headerDesc{
+        width: 50%;
+        height: 200px;
+    }
+    #img{
+        height: 70vh;
+        width: 100%;
+        background-size: cover;
+    }
+    #ContentRight{
+        padding: 0px;
+        display: block;
+
+    }
+    #ContentWrapper{
+        padding: 40px;
+    }
+    #womanBrown{
+        width: 100%;
+    }
+    #footerTextProduct{
+        width: 100%;
+    }
+    #imgProduct{
+        width: 100%;
+        background-size: cover;
+    }
+    #mapImg{
+        width: 100%;
+    }
   }
   

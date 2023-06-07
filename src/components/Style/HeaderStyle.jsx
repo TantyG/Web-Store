@@ -1,4 +1,4 @@
-import { colors, makeStyles} from "@material-ui/core";
+import { makeStyles} from "@material-ui/core";
 import { Theme } from "../Theme";
 
 export const useStyles = makeStyles(() => ({
@@ -31,21 +31,8 @@ export const useStyles = makeStyles(() => ({
         justifyContent: "center",
     },
     BoxImg: {
-        textAlign: "center"
-    },
-    imgIconRec: {
-        width: "424px",
-        height: "542px",
+        textAlign: "center",
         position: "relative"
-    },
-    imgIconWoman:{
-        width: "424px",
-        height: "542px",
-        position: "relative",
-        top: "-15px",
-        right: "438px",
-        borderTopLeftRadius: "150px",
-        borderBottomRightRadius: "150px",
     },
     headerTitle:{
         fontFamily: "Roboto",

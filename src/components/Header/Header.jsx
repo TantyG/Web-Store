@@ -1,9 +1,9 @@
 import { Box, Typography, Button } from "@material-ui/core";
 import { useStyles } from "../Style/HeaderStyle";
 import { Navbar } from "../Navbar/Navbar";
-import iconShopWhite from "../../asset/iconShopWhite.png";
-import iconWomen from "../../asset/womenWhite.png";
-import iconRec from "../../asset/IconRectangle.png";
+import iconShopWhite from "../../asset/ImgPageStore/iconShopWhite.png";
+import iconWomen from "../../asset/ImgPageStore/imageProduct.png";
+//import iconRec from "../../asset/ImgPageStore/IconRectangle.png";
 import {
   data,
   dataContent,
@@ -13,18 +13,18 @@ import {
   dataSeller,
 } from "./data";
 import { styled } from "styled-components";
-import iconWomanBrown from "../../asset/womanDarkBrown.png";
-import iconFil from "../../asset/iconFilter.png";
-import bgImg from "../../asset/BgWomanDress.png";
-import zaraGrey from "../../asset/zaraFontGrey.png";
-import zaraWhite from "../../asset/zaraFontWhite.png";
-import iconPayment from "../../asset/iconsPayment.png";
-import iconArrowOn from "../../asset/iconArrowOn.png";
+import iconWomanBrown from "../../asset/ImgPageStore/womanDarkBrown.png";
+import iconFil from "../../asset/ImgPageStore/iconFilter.png";
+import bgImg from "../../asset/ImgPageStore/BgWomanDress.png";
+import zaraGrey from "../../asset/ImgPageStore/zaraFontGrey.png";
+import zaraWhite from "../../asset/ImgPageStore/zaraFontWhite.png";
+import iconPayment from "../../asset/ImgPageStore/iconsPayment.png";
+import iconArrowOn from "../../asset/ImgPageStore/iconArrowOn.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import iconArrowLeft from "../../asset/iconArrowLeft.png";
-import iconArrowRight from "../../asset/iconArrowRight.png"
+import iconArrowLeft from "../../asset/ImgPageStore/iconArrowLeft.png";
+import iconArrowRight from "../../asset/ImgPageStore/iconArrowRight.png"
 import "../Style/HeaderStyle.css"
 
 function SampleNextArrow(props) {
@@ -117,7 +117,7 @@ const Header = () => {
       <Box className={classes.HeaderWrapper} id="HeaderWrapper">
         <Navbar />
         <Box className={classes.Headercontaier} id="Headercontaier">
-          <Box className={classes.HeaderLeft}>
+          <Box className={classes.HeaderLeft} id="HeaderLeft">
             <Typography
               variant="h3"
               component="h4"
@@ -131,6 +131,7 @@ const Header = () => {
               variant="h3"
               component="h4"
               className={classes.headerDesc}
+              id="headerDesc"
             >
               You can explore ans shop many differnt collection from various
               barands here.
@@ -146,10 +147,10 @@ const Header = () => {
               </Typography>
             </Box>
           </Box>
-          <Box className={classes.HeaderRight}>
+          <Box className={classes.HeaderRight} id="HeaderRight">
             <Box className={classes.BoxImg}>
-              <img src={iconRec} alt="" className={classes.imgIconRec} />
-              <img src={iconWomen} alt="" className={classes.imgIconWoman} />
+              
+              <img src={iconWomen} alt="" className={classes.imgIconWoman} id="imgIconWoman"/>
             </Box>
           </Box>
         </Box>
@@ -158,25 +159,25 @@ const Header = () => {
             return (
               <>
                 <ImgStyle>
-                  <img src={icon.img} alt="" className="mapImg" />
+                  <img src={icon.img} alt="" className="mapImg" id="mapImg" />
                 </ImgStyle>
               </>
             );
           })}
         </Box>
-        <Box className={classes.ContentWrapper}>
+        <Box className={classes.ContentWrapper} id="ContentWrapper">
           <Box className={classes.ContentLeft}>
             <Typography className={classes.textContentLeft}>
               Explore new and popular styles
             </Typography>
-            <img src={iconWomanBrown} alt="" className={classes.womanBrown} />
+            <img src={iconWomanBrown} alt="" className={classes.womanBrown} id="womanBrown" />
           </Box>
-          <Box className={classes.ContentRight}>
+          <Box className={classes.ContentRight} id="ContentRight">
             {dataContent.map((icon) => {
               return (
                 <>
                   <Box>
-                    <img src={icon.img} alt="" />
+                    <img src={icon.img} alt="" id="img"/>
                   </Box>
                 </>
               );
@@ -207,9 +208,9 @@ const Header = () => {
               return (
                 <>
                   <Box>
-                    <img src={icon.img} alt="" />
+                    <img src={icon.img} alt="" id="imgProduct"/>
                     <Box className={classes.textButton}>{icon.text}</Box>
-                    <Box className={classes.footerTextProduct}>
+                    <Box className={classes.footerTextProduct} id="footerTextProduct" >
                       <div>{icon.footerText}</div>
                       <div>{icon.price}</div>
                     </Box>
