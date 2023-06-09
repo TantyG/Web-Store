@@ -35,7 +35,7 @@ function SampleNextArrow(props) {
           ...style,
           display: "block",
           zIndex: "1",
-          right: "90px",
+          right: "125px",
           top: "200px",
           height: "40px",
         }}

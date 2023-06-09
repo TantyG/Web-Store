@@ -3,6 +3,7 @@ import { useStyles } from "../Style/HeaderStyle";
 import iconFlup from "../../asset/ImgPageStore/iconFlup.png";
 import iconAcc from "../../asset/ImgPageStore/iconAccount.png";
 import iconShop from "../../asset/ImgPageStore/iconShoping.png";
+
 const Navbar = () => {
     const classes = useStyles();
     return (
@@ -12,7 +13,6 @@ const Navbar = () => {
           <Typography variant="h6" component="h6" className={classes.nameStore}>
             Lisa Store
           </Typography>
-
           <Box>
                 <img src={iconAcc} alt="" />
                 <Button className="buttonAcc">Account</Button>

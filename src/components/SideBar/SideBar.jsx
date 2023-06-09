@@ -23,22 +23,22 @@ const SideBar = () => {
                 <NavLink to="/product">
                    <Card  icon={iconProduct} text={"Product"} />
                 </NavLink>
-                <NavLink to="/customer">
+                <NavLink to="/customers">
                     <Card icon={iconCustomers} text={"Customers"} />
                 </NavLink>
-                <NavLink to="/order">
+                <NavLink to="/orders">
                     <Card icon={iconOrders} text={"Orders"} />
                 </NavLink>
-                <NavLink>
+                <NavLink to="/shipment">
                    <Card icon={iconShipment} text={"Shipment"} />
                 </NavLink>
-                <NavLink>
+                <NavLink to="/transactions">
                     <Card icon={iconTrans} text={"Transactions"} />
                 </NavLink>
-                <NavLink>
+                <NavLink to="/settings">
                     <Card icon={iconSetting} text={"Settings"} />
                 </NavLink>
-                <NavLink>
+                <NavLink to="/">
                     <Card icon={iconLogout} text={"Logout"} />
                 </NavLink>
             </Box> 

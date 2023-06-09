@@ -8,14 +8,16 @@ export const useStyles = makeStyles(() => ({
     },
     WapperLeft:{
         float: "left",
-        width: "20%",
+        width: "15%",
         height: "auto",
         minHeight: "90vh",
     },
     WapperRight:{
         float: "right",
-        width: "80%",
+        width: "85%",
         backgroundColor: "#E5E5E5",
+         height: "auto",
+        minHeight: "90vh",
     },
     Content:{
         width: "100%",
